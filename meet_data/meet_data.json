@@ -1,0 +1,362 @@
+{
+    "dates": [
+        "July 7 2020",
+        "August 1 2020"
+    ],
+    "July 7 2020":{
+        "Trevor":{
+            "Squat":{
+                "Attempt 1":{
+                    "Weight":385,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":405,
+                    "Sucessful":false
+                },
+                "Attempt 3":{
+                    "Weight":405,
+                    "Sucessful":false
+                }
+            },
+            "Bench":{
+                "Attempt 1":{
+                    "Weight":275,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":295,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":315,
+                    "Sucessful":false
+                }
+            },
+            "Deadlift":{
+                "Attempt 1":{
+                    "Weight":385,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":405,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":425,
+                    "Sucessful":true
+                }
+            }
+        },
+        "Santi":{
+            "Squat":{
+                "Attempt 1":{
+                    "Weight":355,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":385,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":405,
+                    "Sucessful":false
+                }
+            },
+            "Bench":{
+                "Attempt 1":{
+                    "Weight":275,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":295,
+                    "Sucessful":false
+                },
+                "Attempt 3":{
+                    "Weight":295,
+                    "Sucessful":false
+                }
+            },
+            "Deadlift":{
+                "Attempt 1":{
+                    "Weight":315,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":365,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":405,
+                    "Sucessful":true
+                }
+            }
+        },
+        "Hunter":{
+            "Squat":{
+                "Attempt 1":{
+                    "Weight":315,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":335,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":355,
+                    "Sucessful":true
+                }
+            },
+            "Bench":{
+                "Attempt 1":{
+                    "Weight":225,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":245,
+                    "Sucessful":false
+                },
+                "Attempt 3":{
+                    "Weight":235,
+                    "Sucessful":false
+                }
+            },
+            "Deadlift":{
+                "Attempt 1":{
+                    "Weight":335,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":365,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":385,
+                    "Sucessful":false
+                }
+            }
+        }
+    },
+    "August 1 2020":{
+        "Trevor":{
+            "Squat":{
+                "Attempt 1":{
+                    "Weight":385,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":405,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":415,
+                    "Sucessful":false
+                }
+            },
+            "Bench":{
+                "Attempt 1":{
+                    "Weight":275,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":295,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":315,
+                    "Sucessful":false
+                }
+            },
+            "Deadlift":{
+                "Attempt 1":{
+                    "Weight":405,
+                    "Sucessful":false
+                },
+                "Attempt 2":{
+                    "Weight":405,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":"DNA",
+                    "Sucessful":false
+                }
+            }
+        },
+        "Santi":{
+            "Squat":{
+                "Attempt 1":{
+                    "Weight":385,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":405,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":415,
+                    "Sucessful":true
+                }
+            },
+            "Bench":{
+                "Attempt 1":{
+                    "Weight":275,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":295,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":315,
+                    "Sucessful":false
+                }
+            },
+            "Deadlift":{
+                "Attempt 1":{
+                    "Weight":365,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":405,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":"DNA",
+                    "Sucessful":false
+                }
+            }
+        },
+        "Hunter":{
+            "Squat":{
+                "Attempt 1":{
+                    "Weight":315,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":345,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":365,
+                    "Sucessful":false
+                }
+            },
+            "Bench":{
+                "Attempt 1":{
+                    "Weight":205,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":235,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":245,
+                    "Sucessful":false
+                }
+            },
+            "Deadlift":{
+                "Attempt 1":{
+                    "Weight":345,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":375,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":405,
+                    "Sucessful":true
+                }
+            }
+        },
+        "Sam":{
+            "Squat":{
+                "Attempt 1":{
+                    "Weight":275,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":295,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":315,
+                    "Sucessful":false
+                }
+            },
+            "Bench":{
+                "Attempt 1":{
+                    "Weight":205,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":215,
+                    "Sucessful":false
+                },
+                "Attempt 3":{
+                    "Weight":"DNA",
+                    "Sucessful":false
+                }
+            },
+            "Deadlift":{
+                "Attempt 1":{
+                    "Weight":315,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":335,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":345,
+                    "Sucessful":true
+                }
+            }
+        },
+        "Preston":{
+            "Squat":{
+                "Attempt 1":{
+                    "Weight":"DNA",
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":"DNA",
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":"DNA",
+                    "Sucessful":false
+                }
+            },
+            "Bench":{
+                "Attempt 1":{
+                    "Weight":115,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":125,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":135,
+                    "Sucessful":false
+                }
+            },
+            "Deadlift":{
+                "Attempt 1":{
+                    "Weight":185,
+                    "Sucessful":true
+                },
+                "Attempt 2":{
+                    "Weight":225,
+                    "Sucessful":true
+                },
+                "Attempt 3":{
+                    "Weight":"DNA",
+                    "Sucessful":false
+                }
+            }
+        }
+    }
+}
