@@ -3,6 +3,8 @@
     /* background-color: DodgerBlue; */
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+
   }
 
   .flex-container h2{
@@ -26,6 +28,7 @@
     margin: 3%;
     height: 100%;
     width: 100%;
+    max-width: 500px;
   }
   
   .card:hover {
