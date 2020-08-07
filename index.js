@@ -23,6 +23,8 @@ app.get('/powerlifting', (req, res) =>{
 app.get('/meet_results', (req, res) =>{
     res.sendFile(path.join(__dirname, '/html/meet_results.html'))
 })
+
+//api send json
 app.get('/meet_data', (req, res) =>{
     res.sendFile(path.join(__dirname, '/meet_data/meet_data.json'))
 })
