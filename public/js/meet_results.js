@@ -1,8 +1,8 @@
 import {url_parse, getQueryParams} from './url_parsing.js';
-import {load_meet_data} from './load_meet_data.js';
+import {get} from './api_call.js';
 import {get_total} from './get_total.js';
 
-var json = load_meet_data((json) =>{
+var json = get('/meet_data', (json) =>{
 
     var title = document.getElementById('title');
     var title_contents = title.innerHTML;
@@ -10,7 +10,7 @@ var json = load_meet_data((json) =>{
     const meet_date = url_parse(getQueryParams('date', window.location.href));
     title.innerHTML = title_contents + " " + meet_date
 
-    let data = JSON.parse(json)[meet_date]
+    let data = json[meet_date]
 
     var flexcontainer = document.createElement('div');
     flexcontainer.className = 'flex-container';
