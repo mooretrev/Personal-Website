@@ -24,7 +24,15 @@ app.get('/meet_results', (req, res) =>{
     res.sendFile(path.join(__dirname, '/html/meet_results.html'))
 })
 
+app.get('/resume', (req, res) =>{
+    res.sendFile(path.join(__dirname, '/html/resume.html'))
+})
+
 //api send json
 app.get('/meet_data', (req, res) =>{
-    res.sendFile(path.join(__dirname, '/meet_data/meet_data.json'))
+    res.sendFile(path.join(__dirname, '/data/meet_data.json'))
+})
+
+app.get('/resume_data', (req, res) =>{
+    res.sendFile(path.join(__dirname, '/data/resume_data.json'))
 })

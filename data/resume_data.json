@@ -1,0 +1,57 @@
+{
+    "internship":{
+        "Pros":{
+            "time": "June 2020-August 2020",
+            "position": "Product Development Intern (RM Team)",
+            "description": [
+                "WTP - Performance Tuning Self-Hosted Integration Environment",
+                "Reuse Optimizer Rules in Azure Data Bricks / Spark Activities & Pipelines"
+            ]
+        },
+        "EDP Renewables":{
+            "time": "June 2019-August 2019",
+            "position": "Central Maintenance Intern",
+            "description": [
+                "Developed an Inventory Auditor that would generate a randomized report of material to count",
+                "Developed a major component tracker that showed which major components where and how many spares were in stock"
+            ]
+        },
+        "Strand Associates":{
+            "time": "June 2019-August 2019",
+            "position": "Engineering Technician",
+            "description": [
+                "Reduced inflow during rain in the City of Dayton by approximatley 40% saving residents up to $60 in fees (8,000 residents)",
+                "Met all deadlines an budgetary parameters with every project assigned",
+                "Collected leakage data and prioritized leaks on defect urgency"
+            ]
+        }
+    },
+    "project":{
+        "Pros Hackathon":{
+            "position": "Product Development",
+            "sponser": "Pros Internship Program",
+            "description": [
+                "Our team won the Pros Internship Hackathon",
+                "We designed a web app for airline customers to find flights if they missed there connecting flight",
+                "We used node.js, lufthansa api, and ejs to create this web app"
+            ]
+        },
+        "Micro Mouse":{
+            "position": "Project Manager",
+            "sponser": "Aggie Coding Club",
+            "description": [
+                "Design a robot to map and solve a maze",
+                "Implemented an AGILE methodology through scrum"
+            ]
+        },
+        "DSTR Hackathon": {
+            "position": "Computer Science",
+            "sponser": "Department of Mechtronics",
+            "description": [
+                "Won a Summer Hackathon sponsored by NASA, TAMU and Texas Instruments",
+                "Added a solar based array (in C) to a DSTR robot which would track the sun for maximum charging and efficiency",
+                "Established a plan which allowed us to come in under budget by about 30%"
+            ]
+        }
+    }
+}
