@@ -1,8 +1,10 @@
-    .flexbox-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3%;
-    margin: 3%;
+.repContent{
+    width:50%;
+    text-align: center;
+}
+
+.weightContent{
+    width: 50%;
+    text-align: center;
+
 }

@@ -1,15 +1,15 @@
-export function get(url, callback) {   
-
+export function getPromise(url) {  
+  return new Promise((res, rej) =>{
     var xobj = new XMLHttpRequest();
-        xobj.overrideMimeType("application/json");
+    xobj.overrideMimeType("application/json");
     xobj.open('GET', url, true); // Replace 'appDataServices' with the path to your file
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == "200") {
-            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-            callback(JSON.parse(xobj.responseText));
+            res(JSON.parse(xobj.responseText));
           }
     };
     xobj.send(null);  
+  })
  }
 
  

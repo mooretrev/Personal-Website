@@ -1,5 +1,6 @@
 const express = require('express')
 const path = require('path');
+const { join } = require('path');
 
 const app = express()
 const PORT = process.env.PORT || 5000
@@ -24,9 +25,14 @@ app.get('/meet_results', (req, res) =>{
     res.sendFile(path.join(__dirname, '/html/meet_results.html'))
 })
 
+app.get('/program', (req, res)=>{
+    res.sendFile(path.join(__dirname, '/html/program.html'))
+})
+
 app.get('/resume', (req, res) =>{
     res.sendFile(path.join(__dirname, '/html/resume.html'))
 })
+
 
 //api send json
 app.get('/meet_data', (req, res) =>{
@@ -35,4 +41,12 @@ app.get('/meet_data', (req, res) =>{
 
 app.get('/resume_data', (req, res) =>{
     res.sendFile(path.join(__dirname, '/data/resume_data.json'))
+})
+
+app.get('/lifting_plan', (req, res) =>{
+    res.sendFile(path.join(__dirname, '/data/lifting_plan.json'))
+})
+
+app.get('/current_maxes', (req, res) =>{
+    res.sendFile(path.join(__dirname, '/data/current_maxes.json'))
 })

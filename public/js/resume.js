@@ -1,7 +1,8 @@
-import {get} from './api_call.js'
+import {getPromise} from './api_call.js'
 const view = document.getElementById('view')
 
-get('/resume_data', (data) =>{
+getPromise('/resume_data')
+.then((data) =>{
     const flexcontainer = document.createElement('div')
     flexcontainer.className = 'flex-container'
 
@@ -9,6 +10,8 @@ get('/resume_data', (data) =>{
     addProjects(flexcontainer, data['project'])
 
 })
+.catch((err) =>{console.log(err)})
+
 
 const addProjects = (flexcontainer, projects) => {
     const heading = document.createElement('h1')

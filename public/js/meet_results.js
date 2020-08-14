@@ -1,8 +1,9 @@
 import {url_parse, getQueryParams} from './url_parsing.js';
-import {get} from './api_call.js';
+import {getPromise} from './api_call.js';
 import {get_total} from './get_total.js';
 
-var json = get('/meet_data', (json) =>{
+getPromise('/meet_data')
+.then((json) =>{
 
     var title = document.getElementById('title');
     var title_contents = title.innerHTML;
@@ -68,7 +69,8 @@ var json = get('/meet_data', (json) =>{
         flexcontainer.appendChild(card);
     }
     document.body.appendChild(flexcontainer);
-});
+})
+.catch((err) =>{console.log(err)})
 
 const createNameCell = (data) =>{
     var div = document.createElement('div');

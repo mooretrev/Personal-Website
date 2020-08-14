@@ -1,0 +1,131 @@
+{
+    "weeks":{
+        "Day 1":{
+            "main_lift":"squat",
+            "focus":"Lower Body (Squat Focus)",
+            "workouts":[
+                {
+                    "workout":"Back Squats",
+                    "rest":"4-5 mins"
+                },
+                {
+                    "workout":"Rack Pull",
+                    "rest":"4-5 mins"
+                },
+                {
+                    "workout":"Front Squats",
+                    "rest":"4-5 mins"
+                }
+            ]
+        },
+        "Day 2":{
+            "focus":"Rest",
+            "workouts":[] 
+        },
+        "Day 3":{
+            "main_lift":"bench",
+            "focus":"Upper Body (Bench Press)",
+            "workouts":[
+                {
+                    "workout":"Barbell bench press",
+                    "rest":"4-5 mins"
+                },
+                {
+                    "workout":"Incline Dumbbell bench press",
+                    "rest":"4-5 mins"
+                },
+                {
+                    "workout":"Neutral-grip dumbbell bench press",
+                    "rest":"4-5 mins"
+                },
+                {
+                    "workout":"Straight bar tricep pushdowns",
+                    "rest":"3 mins"
+                }
+            ]
+        },
+        "Day 4":{
+            "focus":"Rest",
+            "workouts":[] 
+        },
+        "Day 5":{
+            "main_lift":"deadlift",
+            "focus":"Lower Body (Deadlift Focus)",
+            "workouts":[
+                {
+                    "workout":"Barbell Deadlifts",
+                    "rest":"4-5 mins"
+                },
+                {
+                    "workout":"Bent-Over Barbell Row",
+                    "rest":"4-5 mins"
+                },
+                {
+                    "workout":"Power Cleans",
+                    "rest":"4-5 mins"
+                }
+            ]
+        },
+        "Day 6":{
+            "focus":"Rest",
+            "workouts":[] 
+        },
+        "Day 7":{
+            "focus":"Mobility Training",
+            "workouts":[] 
+        }
+    },
+    "weight projection":{
+        "Week 1":{
+            "sets":5,
+            "reps":5,
+            "percentage":75
+        },
+        "Week 2":{
+            "sets":4,
+            "reps":4,
+            "percentage":70
+        },
+        "Week 3":{
+            "sets":3,
+            "reps":3,
+            "percentage":80
+        },
+        "Week 4":{
+            "sets":"DELOAD",
+            "reps":"DELOAD",
+            "percentage":50
+        },
+        "Week 5":{
+            "sets":4,
+            "reps":4,
+            "percentage":80
+        },
+        "Week 6":{
+            "sets":3,
+            "reps":3,
+            "percentage":85
+        },
+        "Week 7":{
+            "sets":4,
+            "reps":4,
+            "percentage":55
+        },
+        "Week 8":{
+            "sets":"DELOAD",
+            "reps":"DELOAD",
+            "percentage":50
+        },
+        "Week 9":{
+            "sets":4,
+            "reps":3,
+            "percentage":75
+        },
+        "Week 10":{
+            "sets":3,
+            "reps":2,
+            "percentage":90
+        }
+    }
+    
+}

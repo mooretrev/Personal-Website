@@ -1,0 +1,19 @@
+.workout{
+    display: flex;
+    width: 60%;
+}
+
+#workout{
+    text-align: left;
+    width: 100%;
+}
+
+.repScheme{
+    display: flex;
+    width: 20%;
+}
+
+.suggestedWeight{
+    display: flex;
+    width: 20%;
+}
