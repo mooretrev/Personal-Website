@@ -25,6 +25,7 @@ getPromise('/meet_data')
     var dates = json.dates;
     for(var i = 0; i < dates.length; i++){
         var anchor = document.createElement('a');
+        anchor.className = 'max-width'
         anchor.href = './meet_results?date=' + url_load(dates[i]);
         anchor.innerText = dates[i];
         card.appendChild(anchor);
@@ -48,6 +49,7 @@ getPromise('/meet_data')
     var weeks = data['weight projection']
         for(var week in weeks){
             var anchor = document.createElement('a');
+            anchor.className = 'max-width'
             anchor.href = './program?week=' + url_load(week);
             anchor.innerText = week;
             card.appendChild(anchor); 
