@@ -33,10 +33,6 @@ app.get('/resume', (req, res) =>{
     res.sendFile(path.join(__dirname, '/html/resume.html'))
 })
 
-app.get('/stocks', (req, res) =>{
-    res.sendFile(path.join(__dirname, '/html/stocks.html'))
-})
-
 
 //api send json
 app.get('/meet_data', (req, res) =>{
