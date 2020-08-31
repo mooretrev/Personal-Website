@@ -52,8 +52,6 @@ const addProjects = (flexcontainer, projects) => {
         const br = document.createElement('br')
         card.append(br)
 
-        const description = document.createElement('div')
-        description.className = 'description'
         const ul = document.createElement('ul')
 
         for(var i in projects[key]['description']){
@@ -61,8 +59,7 @@ const addProjects = (flexcontainer, projects) => {
             li.innerText = projects[key]["description"][i]
             ul.appendChild(li)
         }
-        description.appendChild(ul)
-        card.appendChild(description)
+        card.appendChild(ul)
 
         cards.append(card)
     }
@@ -112,8 +109,6 @@ const addInternships = (flexcontainer, internship) =>{
         const br = document.createElement('br')
         card.append(br)
 
-        const description = document.createElement('div')
-        description.className = 'description'
         const ul = document.createElement('ul')
 
         for(var i in internship[key]['description']){
@@ -122,8 +117,7 @@ const addInternships = (flexcontainer, internship) =>{
             ul.appendChild(li)
         }
 
-        description.appendChild(ul)
-        card.appendChild(description)
+        card.appendChild(ul)
         
         cards.appendChild(card)
     }
