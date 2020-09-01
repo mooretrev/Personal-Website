@@ -33,6 +33,14 @@ app.get('/resume', (req, res) =>{
     res.sendFile(path.join(__dirname, '/html/resume.html'))
 })
 
+app.get('/recipes', (req, res) =>{
+    res.sendFile(path.join(__dirname, '/html/recipes/recipes.html'))
+})
+
+app.get('/recipes_result', (req, res) =>{
+    res.sendFile(path.join(__dirname, '/html/recipes/recipes_result.html'))
+})
+
 
 //api send json
 app.get('/meet_data', (req, res) =>{
@@ -49,4 +57,8 @@ app.get('/lifting_plan', (req, res) =>{
 
 app.get('/current_maxes', (req, res) =>{
     res.sendFile(path.join(__dirname, '/data/current_maxes.json'))
+})
+
+app.get('/recipes_data', (req, res) =>{
+    res.sendFile(path.join(__dirname, '/data/recipes.json'))
 })
