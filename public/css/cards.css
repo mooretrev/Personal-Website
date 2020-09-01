@@ -10,10 +10,6 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-  
-  /* .card:hover {
-    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.4);
-  } */
 
   .card {
     display: flex;

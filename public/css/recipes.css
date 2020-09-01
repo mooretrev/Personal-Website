@@ -1,0 +1,23 @@
+
+
+.max-width{
+    width: 100%;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.measurement{
+    display: flex;
+    /* flex-grow: 1; */
+    justify-content: center;
+    width: 50%;
+}
+
+.ingredient{
+    display: flex;
+    /* flex-grow: 3; */
+    justify-content: center;
+    width: 50%;
+}
