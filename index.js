@@ -1,10 +1,11 @@
 const express = require('express')
 const path = require('path');
 const { join } = require('path');
+const positionSizePromise = require('td_ameritrade_api').positionSizePromise
 
 const app = express()
 const PORT = process.env.PORT || 5000
-app.use('/public', express.static('public'))
+app.use('/public', express.static('public')) 
 // app.use('/js', express.static('public'))
 
 
@@ -41,6 +42,9 @@ app.get('/recipes_result', (req, res) =>{
     res.sendFile(path.join(__dirname, '/html/recipes/recipes_result.html'))
 })
 
+app.get('/stocks', (req, res) =>{
+    res.sendFile(path.join(__dirname, 'html/stocks.html'))
+})
 
 //api send json
 app.get('/meet_data', (req, res) =>{
@@ -61,4 +65,11 @@ app.get('/current_maxes', (req, res) =>{
 
 app.get('/recipes_data', (req, res) =>{
     res.sendFile(path.join(__dirname, '/data/recipes.json'))
+})
+
+app.get('/risk_calculator', (req, res) =>{
+    positionSizePromise(req.query.ticker, req.query.stoploss)
+    .then((data) =>{
+        res.send(data)
+    })
 })

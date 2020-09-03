@@ -16,13 +16,37 @@
         <a href="/">Home</a>
         <a href="/powerlifting">Power Lifting</a>
         <a href="/resume">Resume</a>
+        <a href="/recipes">Recipes</a>
         <a class="active" href="/stocks">Stocks</a>
     </div>
 
     <h1>Stocks</h1>    
 
+
     <div class="flex-container">
-        <h2>Positions</h2>
+        <h2>Risk Calculator</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="row">
+                    <p class="label">Ticker</p>
+                    <input id="ticker" class="input" type="text">
+                </div>
+                <div class="row">
+                    <p class="label" >Stop Loss</p>
+                    <input id="stop_loss" class="input" type="text">
+                </div>
+                <div class="row">
+                    <h3 id="shares">Shares: 4</h3>
+                    <h3 id="position_size">Position Size: $700</h3>
+                    <h3 id="amount_risked">Amount Risked: $52</h3>
+
+                </div>
+                <button id="risk_calculator_button" class="button">Submit</button>
+                
+                
+            </div>
+        </div>
+        <!-- <h2>Positions</h2>
         <div class="cards">
             <div class="card">
                 <h3 class="ticker">MSFT</h3>
@@ -32,6 +56,6 @@
                 <button class="button" id="button">Close Position</button>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
