@@ -24,11 +24,17 @@ p{
 
 
 .input{
-    width: 85%;
+    display: flexbox;
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .label{
-    width: 15%;
+    margin-top: 10px;
+    display: flexbox;
+    color: white;
+    flex-grow: 1;
 }
 
 #shares{
