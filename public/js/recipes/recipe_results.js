@@ -5,6 +5,7 @@ getPromise('recipes_data')
 .then((recipeData) =>{
     const recipeName = url_parse(getQueryParams('recipe', window.location.href));
     document.getElementById('recipe').innerText = recipeName
+    document.getElementById('title').innerText = recipeName
 
     const flexbox = document.getElementById('flex-box')
     recipeData = recipeData[recipeName]
