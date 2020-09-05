@@ -73,3 +73,7 @@ app.get('/risk_calculator', (req, res) =>{
         res.send(data)
     })
 })
+
+app.get('/pages', (req, res) =>{
+    res.sendFile(path.join(__dirname, '/data/pages.json'))
+})
