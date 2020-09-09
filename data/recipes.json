@@ -41,5 +41,17 @@
             "Mozzarella Cheese": "1 cup",
             "Large Egg": "1"
         }
+    },
+    "Breakfest Burruto":{
+        "Filling":{
+            "Eggs":1,
+            "Onions":1,
+            "Jalopenos":1,
+            "Potatoes":1,
+            "Cheese":1,
+            "Ground Beef":1,
+            "Salsa":1,
+            "Hot Sauces":1,
+        }
     }
 }
