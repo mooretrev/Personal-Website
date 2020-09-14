@@ -53,5 +53,28 @@
             "Salsa":1,
             "Hot Sauces":1
         }
+    },
+    "Pho":{
+        "Stock":{
+            "Beef Base":1,
+            "Fish Sauce":1,
+            "White Sugar":1,
+            "Ginger":1,
+            "Yellow Onion":1,
+            "1 Hours Later":1,
+            "Colves":2,
+            "Star Anise":2,
+            "Cinnamon Stick":1
+        },
+        "Bowl":{
+            "Rice Stick Noodles":1,
+            "Thinly Sliced Steak":1,
+            "Cilantro":1,
+            "Jalapenos":1,
+            "Thinny Sliced Onions":1,
+            "Lime":1,
+            "Sriracha Sauce":1,
+            "Hoisin Sauce":1
+        }
     }
 }
