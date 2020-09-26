@@ -74,11 +74,14 @@
         }
     },
     "Pizza Dough":{
-        "Warm Water": "2 and 1/2 cups",
-        "Sugar": "1 tsp",
-        "Active Dry Yeast": "2 tsp",
-        "All Purpose Flour": "7 Cups",
-        "Extra Virgin Olive Oil": "6 tbsp",
-        "Kosher Salt": "1 and 1/2 tsp"
+        "Dough":{
+            "Warm Water": "2 and 1/2 cups",
+            "Sugar": "1 tsp",
+            "Active Dry Yeast": "2 tsp",
+            "All Purpose Flour": "7 Cups",
+            "Extra Virgin Olive Oil": "6 tbsp",
+            "Kosher Salt": "1 and 1/2 tsp"
+        }
+       
     }
 }
