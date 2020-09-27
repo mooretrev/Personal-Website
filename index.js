@@ -2,13 +2,13 @@ const express = require('express')
 const path = require('path');
 const { join } = require('path');
 const positionSizePromise = require('td_ameritrade_api').positionSizePromise
+const ejs = require('ejs')
 
 const app = express()
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 3000
 app.use('/public', express.static('public')) 
-// app.use('/js', express.static('public'))
 
-
+app.set('view engine', 'ejs');
 
 app.listen(PORT, () => {
     console.log(`Example app listening at http://localhost:${PORT}`)
@@ -44,6 +44,14 @@ app.get('/recipes_result', (req, res) =>{
 
 app.get('/stocks', (req, res) =>{
     res.sendFile(path.join(__dirname, 'html/stocks.html'))
+})
+
+app.get('/ejs',(req, res) =>{
+
+    res.render(path.join(__dirname, '/ejs/temp.ejs'), {
+        "data": "Hello World"
+    })
+
 })
 
 //api send json
