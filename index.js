@@ -10,7 +10,7 @@ app.use('/public', express.static('public'))
 
 app.set('view engine', 'ejs');
 
-
+//setup database connection
 const mongoDbPassword = process.env.MONGO_DB_PASSWORD
 
 const MongoClient = require('mongodb').MongoClient;
