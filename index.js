@@ -11,9 +11,10 @@ app.use('/public', express.static('public'))
 app.set('view engine', 'ejs');
 
 
+const mongoDbPassword = process.env.MONGO_DB_PASSWORD
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://Personal-Website:AsUmXf1KuRHfilqp@cluster0.e4wxl.mongodb.net/dev?retryWrites=true&w=majority";
+const uri = `mongodb+srv://Personal-Website:${mongoDbPassword}@cluster0.e4wxl.mongodb.net/dev?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true });
 
 
@@ -75,17 +76,13 @@ app.get('/lifting_plan', (req, res) =>{
     res.sendFile(path.join(__dirname, '/data/lifting_plan.json'))
 })
 
-// app.get('/current_maxes', (req, res) =>{
-//     res.sendFile(path.join(__dirname, '/data/current_maxes.json'))
-// })
-
 app.get('/recipes_data', (req, res) =>{
     res.sendFile(path.join(__dirname, '/data/recipes.json'))
 })
 
 app.get('/risk_calculator', (req, res) =>{
     positionSizePromise(req.query.ticker, req.query.stoploss)
-    .then((data) =>{
+    .then((data) =>{    
         res.send(data)
     })
 })

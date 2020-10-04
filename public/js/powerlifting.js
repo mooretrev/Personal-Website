@@ -54,7 +54,7 @@ getPromise('/meet_data')
             anchor.innerText = week;
             card.appendChild(anchor); 
         }
-
+    
     return getPromise('/current_maxes')
 })
 .then((maxes) =>{
@@ -66,7 +66,7 @@ getPromise('/meet_data')
     cardsRepsMax.className = 'cards'
     flexbox.appendChild(cardsRepsMax)
 
-    for(var lift in maxes['maxesByRep']){
+    for(var i in maxes){
         var cardLift = document.createElement('div')
         cardLift.className = 'card'
         cardsRepsMax.appendChild(cardLift)
@@ -74,10 +74,10 @@ getPromise('/meet_data')
         const liftDiv = document.createElement('div')
         liftDiv.className = 'lift'
         const liftHeader = document.createElement('h2')
-        liftHeader.innerText = lift
+        liftHeader.innerText = maxes[i]._id
         cardLift.appendChild(liftHeader)
 
-        var repMaxes = maxes['maxesByRep'][lift]
+        var repMaxes = maxes[i].maxes
         for(var rep in repMaxes){
             var row = document.createElement('row')
             row.className = 'row'
