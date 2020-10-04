@@ -10,6 +10,14 @@ app.use('/public', express.static('public'))
 
 app.set('view engine', 'ejs');
 
+
+
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://Personal-Website:AsUmXf1KuRHfilqp@cluster0.e4wxl.mongodb.net/dev?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+
+
+
 app.listen(PORT, () => {
     console.log(`Example app listening at http://localhost:${PORT}`)
 })
@@ -67,9 +75,9 @@ app.get('/lifting_plan', (req, res) =>{
     res.sendFile(path.join(__dirname, '/data/lifting_plan.json'))
 })
 
-app.get('/current_maxes', (req, res) =>{
-    res.sendFile(path.join(__dirname, '/data/current_maxes.json'))
-})
+// app.get('/current_maxes', (req, res) =>{
+//     res.sendFile(path.join(__dirname, '/data/current_maxes.json'))
+// })
 
 app.get('/recipes_data', (req, res) =>{
     res.sendFile(path.join(__dirname, '/data/recipes.json'))
@@ -84,4 +92,25 @@ app.get('/risk_calculator', (req, res) =>{
 
 app.get('/pages', (req, res) =>{
     res.sendFile(path.join(__dirname, '/data/pages.json'))
+})
+
+app.get("/current_maxes", (req, res) =>{
+    try{
+        client.connect(err => {
+            const collection = client.db("dev").collection("maxes");
+          
+            const doc = collection.find().toArray()
+            doc.then(function (data){
+              const _json = JSON.stringify(data)
+              res.send(_json)
+            })
+            .catch(function (err){
+              console.log(err)
+            })
+            client.close();
+          });
+    }
+    finally{
+        client.close()
+    }
 })
