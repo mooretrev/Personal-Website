@@ -1,8 +1,7 @@
 {
-    "/":"Home",
-    "/powerlifting": "Power Lifting",
-    "/resume": "Resume",
-    "/recipes": "Recipes",
-    "/stocks": "Stocks",
-    "/ejs": "Temp ejs"
+  "/": "Home",
+  "/powerlifting": "Power Lifting",
+  "/resume": "Resume",
+  "/recipes": "Recipes",
+  "/stocks": "Stocks"
 }
