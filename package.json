@@ -6,7 +6,7 @@
   "dependencies": {
     "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "mocha": "^8.1.1",
+    "mocha": "^8.4.0",
     "mongodb": "^3.6.2",
     "nodemon": "^2.0.4",
     "td_ameritrade_api": "^1.1.1"
